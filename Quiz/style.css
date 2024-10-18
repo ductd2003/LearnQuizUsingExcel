@@ -1,0 +1,127 @@
+/* Cơ bản */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Tiêu đề trang */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+/* Upload file button */
+#upload {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#upload:hover {
+    background-color: #005bb5;
+}
+
+/* Quiz container */
+#quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+#quiz-container p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Câu hỏi và các đáp án */
+#quiz-container label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#quiz-container label:hover {
+    background-color: #f0f8ff;
+}
+
+#quiz-container label.correct {
+    background-color: #d4edda; /* Màu xanh cho câu trả lời đúng */
+    border-color: #28a745;
+    color: #155724;
+}
+
+#quiz-container label.incorrect {
+    background-color: #f8d7da; /* Màu đỏ cho câu trả lời sai */
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Nút submit */
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Đáp ứng với màn hình nhỏ */
+@media (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    #quiz-container {
+        padding: 15px;
+    }
+
+    #quiz-container p {
+        font-size: 1.1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
