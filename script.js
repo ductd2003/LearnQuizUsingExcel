@@ -38,7 +38,7 @@ function generateQuiz(data) {
             return; // Bỏ qua hàng này nếu không có dữ liệu hợp lệ
         }
 
-        const correctAnswers = correctAnswersStr.split(',').map(ans => ans.trim()); // Chia nhỏ đáp án đúng nếu có nhiều đáp án
+        const correctAnswers = correctAnswersStr.split(',,').map(ans => ans.trim()); // Chia nhỏ đáp án đúng nếu có nhiều đáp án
 
         // Tạo 3 câu trả lời sai ngẫu nhiên
         let incorrectAnswers = [];
