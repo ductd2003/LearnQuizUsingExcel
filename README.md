@@ -4,7 +4,7 @@ Nếu 1 câu hỏi có nhiều hơn 1 câu trả lời thì ở cột B, các c�
 Dữ liệu sẽ được đọc từ dòng 2 trở đi, vì thế để tránh mất mát dữ liệu, hãy bắt đầu từ dòng 2. 
 Tối đa chỉ đọc 100 dòng trong 1 file excel.
 Link: https://ductd2003.github.io/LearnQuizUsingExcel/
-Ví dụ excel:
+Ví dụ excel: 
           A     |    B
 1      Câu hỏi  |  Đáp án
 2      Water    | Nước ,, Thủy
